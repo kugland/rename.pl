@@ -1,7 +1,7 @@
 # Maintainer: kugland <kugland at gmail dot com>
 
 pkgname=renamepl-dev
-pkgver=2.0.0
+pkgver=r1.580ab3f
 pkgrel=1
 pkgdesc='Rename files using perl expressions'
 arch=('any')
@@ -14,7 +14,7 @@ sha256sums=(
   SKIP
   SKIP
   SKIP
-  "5c4cae9d67a1772b756b3b3327d20e46f14e681cfa8acc001d0b6627da86a693"
+  SKIP
 )
 
 pkgver() {
