@@ -1,7 +1,7 @@
 # Maintainer: kugland <kugland at gmail dot com>
 
 pkgname=renamepl-dev
-pkgver=r1.580ab3f
+pkgver=r2.435740b
 pkgrel=1
 pkgdesc='Rename files using perl expressions'
 arch=('any')
@@ -22,8 +22,9 @@ pkgver() {
 }
 
 package() {
+  cat rename.pl.1 | gzip >rename.pl.1.gz
   install -Dm755 rename.pl ${pkgdir}/usr/bin/rename.pl
-  install -Dm644 rename.pl.1 ${pkgdir}/usr/share/man/man1/rename.pl.1
+  install -Dm644 rename.pl.1.gz ${pkgdir}/usr/share/man/man1/rename.pl.1.gz
   install -Dm644 README.md ${pkgdir}/usr/share/doc/rename-pl/README.md
   install -Dm644 LICENSE ${pkgdir}/usr/share/doc/rename-pl/LICENSE
 }
