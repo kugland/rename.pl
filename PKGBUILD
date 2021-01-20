@@ -7,7 +7,7 @@ pkgdesc='Rename files using perl expressions'
 arch=('any')
 url='https://github.com/kugland/rename.pl'
 license=('mit')
-depends=('gcc-libs' 'perl>=5.3.0' 'perl-try-tiny')
+depends=('perl>=5.3.0' 'perl-try-tiny')
 optdepends=('perl-text-unidecode: unidecode support')
 source=('rename.pl' 'rename.pl.1' 'README.md' 'LICENSE')
 sha256sums=(
